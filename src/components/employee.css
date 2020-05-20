@@ -1,0 +1,68 @@
+.employee{
+    text-align: center;
+}
+
+h3 {
+    margin: 70px;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 20px #5C258D;
+}
+h3:hover{
+    animation: two 2s infinite;
+    animation-direction: reverse;
+}
+@keyframes two {
+    0% {
+      transform: rotateZ(0);
+      opacity: 0;
+    }
+    100% {
+      transform: rotateZ(360deg);
+      opacity: 1;
+    }
+  }
+
+.employee form {
+    margin: 0 0 0 300px;
+}
+.employee form input{
+    border-radius: 50px;
+    padding: 1.375rem 1.75rem;
+    border: 1px solid red;
+    background: transparent;
+}
+.employee form input:valid{
+    border: 1px solid #a0d214;
+    background-image: url('./check.png');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: right;
+    background-position-x: 285px;
+}
+
+.employee form input:focus {
+    border: 1px solid #5C258D;
+    box-shadow: 0px 0px 20px 0px #5C258D;
+}
+.add {
+    background-color: #5C258D;
+    color: #fff;
+}
+.add:active::after {
+    content: 'ed';
+}
+.add:active {
+    background-color: #a0d214;
+}
+
+.alert {
+    width: 325px;
+}
+
+.error{
+    color: #721c24;
+    /* background-color: #f8d7da; */
+    padding: 3px;
+    border-color: #f5c6cb;
+    border-radius: 8px;
+}
